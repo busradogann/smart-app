@@ -1,0 +1,64 @@
+.smart-progress {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 90px 100px;
+
+  background-color: #000000;
+  border-radius: 25px;
+
+  font-family: 'Molengo', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #F6F6F0;
+
+  p {
+    padding-top: 10px;
+
+    p .p__percent {
+      margin-bottom: 0;
+    }
+
+    .progress {
+      height: 6px;
+
+      .progress-bar.bg-warning {
+        width: 32.1%;
+      }
+    }
+
+    .achieved {
+      display: inline-grid;
+
+      a {
+        text-decoration: none;
+        font-size: 11px;
+        color: #ffffff;
+      }
+
+      p {
+        padding-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        place-self: center;
+      }
+    }
+
+    .active {
+      display: inline-grid;
+      margin-left: 12px;
+
+      a {
+        text-decoration: none;
+        font-size: 11px;
+        color: #B7B7B7;
+      }
+
+      p {
+        padding-top: 0;
+        margin-bottom: 0;
+        display: none;
+        place-self: center;
+      }
+    }
+  }
+}

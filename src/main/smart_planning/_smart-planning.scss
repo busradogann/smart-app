@@ -1,0 +1,88 @@
+.smart-planning {
+  padding: 25px 22px 55px 22px;
+
+  background-color: #F5F7F7;
+  border-radius: 17px;
+
+  font-family: 'Molengo', sans-serif;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 272px 60px 60px;
+
+  .p__what-is-smart-planning {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .p__description {
+      margin-bottom: 4px;
+
+      font-size: 10px;
+      font-weight: bold;
+      color: #939393;
+    }
+
+    .p__learn-more {
+      font-weight: bolder;
+      font-size: 11px;
+      color: #FC6C08;
+
+      text-decoration: none;
+    }
+
+    .right-arrow {
+      margin-left: 10px;
+    }
+
+    .button__graph {
+      width: 48px;
+      height: 97px;
+
+      background-color: #FC6C08;
+
+      border-radius: 14px;
+      border-style: none;
+
+      font-weight: bold;
+      font-size: 10px;
+      color: #ffffff;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+
+    .button__cloud {
+      width: 48px;
+      height: 97px;
+
+      margin-bottom: 10px;
+
+      background-color: #645CF5;
+
+      border-radius: 15px;
+      border-style: none;
+
+      font-weight: bold;
+      font-size: 10px;
+      color: #ffffff;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+@media(min-width: 1240px) {
+  .smart-planning {
+    max-width: 740px;
+  }
+}
+
+@media(min-width: 920px) {
+  .smart-planning {
+    max-width: 840px;
+  }
+}

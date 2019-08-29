@@ -1,0 +1,27 @@
+.background {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffeee4;
+    height: 100vh;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 920px!important;
+    }
+}
+
+@media(min-width: 860px) {
+    .container {
+        max-width: 780px;
+    }
+}
+
+@media(min-width: 720px) {
+    .container {
+        max-width: 580px;
+    }
+}
