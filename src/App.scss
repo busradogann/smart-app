@@ -1,27 +1,52 @@
 .background {
     background-color: #000000;
     height: 100vh;
-}
 
-.container {
-    background-color: #ffeee4;
-    height: 100vh;
-}
-
-@media(min-width: 1200px) {
     .container {
-        max-width: 920px!important;
+        background-color: #FDF5EB;
+        height: 100vh;
+
+        padding: 72px 0 72px 0;
     }
+
+    .body {
+        background-color: #ffffff;
+        height: 80vh;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        border-radius: 20px;
+        -webkit-box-shadow: -3px -8px 22px -10px rgba(232,229,232,1);
+        -moz-box-shadow: -3px -8px 22px -10px rgba(232,229,232,1);
+        box-shadow: -3px -8px 22px -10px rgba(232,229,232,1);
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 90px 420px 190px;
+        grid-gap: 29px;
+    }
+
+    @media(min-width: 1200px) {
+        .container {
+            max-width: 932px!important;
+            .body {
+                max-width: 761px!important;
+            }
+        }
+    }
+
+    @media(min-width: 860px) {
+        .container {
+            max-width: 780px;
+        }
+    }
+
+    @media(min-width: 720px) {
+        .container {
+            max-width: 580px;
+        }
+    }
+
 }
 
-@media(min-width: 860px) {
-    .container {
-        max-width: 780px;
-    }
-}
-
-@media(min-width: 720px) {
-    .container {
-        max-width: 580px;
-    }
-}

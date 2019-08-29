@@ -1,0 +1,24 @@
+.side {
+  height: 100%;
+  background-color: #FAD15E;
+  border-radius: 20px 0 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  .item-2 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 60px 41px 41px 41px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .side {
+    max-width: 920px!important;
+    .item-1 {
+      max-width: 400px!important;
+    }
+  }
+}
