@@ -1,10 +1,12 @@
 import React from "react";
-import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import "./App.scss";
 
 import Sidebar from "./sidebar/Sidebar";
 import Main from "./main/Main";
 import MainRight from "./main-right/MainRight";
+
 
 export default function App() {
   return (
