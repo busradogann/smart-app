@@ -28,24 +28,27 @@ export default class SmartProgress extends Component {
     render() {
         return (
             <div className={"smart-progress"}>
-                <img src={runner_1} alt=""/>
-                <p>SMART progress
-                    <p className={"p__percent"}>32.1%</p>
-                    <div className="progress">
-                        <div className="progress-bar bg-warning" role="progressbar"
-                             aria-valuemin="0" aria-valuemax="100">
+                <div>
+                    <img src={runner_1} alt=""/>
+                </div>
+                <div>
+                    <p>SMART progress
+                        <p className={"p__percent"}>32.1%</p>
+                        <div className="progress">
+                            <div className="progress-bar bg-warning" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                            </div>
                         </div>
-                    </div>
-                        <br/>
-                    <div className={"achieved"} onClick={this.clickedAchieved}>
-                        <a href="#" className={"a__achieved"}>Achieved</a>
-                        <p className={"achieved-dote"}>.</p>
-                    </div>
-                    <div className={"active"} onClick={this.clickedActive}>
-                        <a href="#" className={"a__active"}>Active</a>
-                        <p className={"active-dote"}>.</p>
-                    </div>
-                </p>
+                        <div className={"achieved"} onClick={this.clickedAchieved}>
+                            <a href="#" className={"a__achieved"}>Achieved</a>
+                            <p className={"achieved-dote"}>.</p>
+                        </div>
+                        <div className={"active"} onClick={this.clickedActive}>
+                            <a href="#" className={"a__active"}>Active</a>
+                            <p className={"active-dote"}>.</p>
+                        </div>
+                    </p>
+                </div>
             </div>
         );
     }
